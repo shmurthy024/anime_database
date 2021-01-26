@@ -10,8 +10,8 @@ import {SearchContext} from './context/search';
 
 
 function App() {
-  const {animeData, setAnimeData} = useState([])
-  const {singleData, setSingleData} = useState([])
+  const [animeData, setAnimeData] = useState([]);
+  const [singleData, setSingleData] = useState({});
   
   const setData = (data) => {
     setAnimeData(data);
