@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/anime_database/static/css/main.9c9bca11.chunk.css",
+    "main.js": "/anime_database/static/js/main.84abed64.chunk.js",
+    "main.js.map": "/anime_database/static/js/main.84abed64.chunk.js.map",
+    "runtime-main.js": "/anime_database/static/js/runtime-main.dd7438c0.js",
+    "runtime-main.js.map": "/anime_database/static/js/runtime-main.dd7438c0.js.map",
+    "static/js/2.3ee93020.chunk.js": "/anime_database/static/js/2.3ee93020.chunk.js",
+    "static/js/2.3ee93020.chunk.js.map": "/anime_database/static/js/2.3ee93020.chunk.js.map",
+    "index.html": "/anime_database/index.html",
+    "static/css/main.9c9bca11.chunk.css.map": "/anime_database/static/css/main.9c9bca11.chunk.css.map",
+    "static/js/2.3ee93020.chunk.js.LICENSE.txt": "/anime_database/static/js/2.3ee93020.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.dd7438c0.js",
+    "static/js/2.3ee93020.chunk.js",
+    "static/css/main.9c9bca11.chunk.css",
+    "static/js/main.84abed64.chunk.js"
+  ]
+}
