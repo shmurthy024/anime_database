@@ -8,16 +8,18 @@
 I wanted to create a project based on Anime and using the Jikan unoffical api to see if I could effectivley build an app that could search the anime catalog
 
 ## Pictures
-![SingleViewPage](https://user-images.githubusercontent.com/67122293/105923524-5acbe100-5ff1-11eb-9682-053b48c4afda.jpg)
-
-
-
-![SingleViewPage](https://user-images.githubusercontent.com/67122293/105923524-5acbe100-5ff1-11eb-9682-053b48c4afda.jpg)
+![Homepage](https://user-images.githubusercontent.com/67122293/105923817-cdd55780-5ff1-11eb-921f-030a95ed54ba.jpg)
 
 
 
 
-![SingleViewPage](https://user-images.githubusercontent.com/67122293/105923524-5acbe100-5ff1-11eb-9682-053b48c4afda.jpg)
+![Search Page](https://user-images.githubusercontent.com/67122293/105923847-dc237380-5ff1-11eb-9c2b-61edd21b1e2b.jpg)
+
+
+
+
+![SingleViewPage](https://user-images.githubusercontent.com/67122293/105923871-ec3b5300-5ff1-11eb-9909-686b57270bfd.jpg)
+
 
 
 
