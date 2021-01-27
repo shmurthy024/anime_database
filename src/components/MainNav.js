@@ -1,12 +1,12 @@
-import React from 'react';
+import React, { useContext, useState } from 'react';
+import {useHistory, Link} from 'react-router-dom';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
-import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
 import InputBase from '@material-ui/core/InputBase';
 import { fade, makeStyles } from '@material-ui/core/styles';
-import MenuIcon from '@material-ui/icons/Menu';
 import SearchIcon from '@material-ui/icons/Search';
+import { SearchContext } from '../context/search';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -65,23 +65,30 @@ const useStyles = makeStyles((theme) => ({
 
 export default function SearchAppBar() {
   const classes = useStyles();
+  const history = useHistory();
+  const search = useContext(SearchContext);
+  const [input, setInput] = useState('');
 
+  const handleSearch = (event) =>
+  {
+      event.preventDefault();
+      search.search(input).then((data) => {
+        search.setData(data.results);
+        localStorage.setItem('myData', JSON.stringify(data.results));
+        setInput('');
+        history.push('/results');
+      });
+  }
   return (
     <div className={classes.root}>
       <AppBar position="static">
         <Toolbar>
-          <IconButton
-            edge="start"
-            className={classes.menuButton}
-            color="inherit"
-            aria-label="open drawer"
-          >
-            <MenuIcon />
-          </IconButton>
-          <Typography className={classes.title} variant="h6" noWrap>
-            Material-UI
+          <Link to="/" className={classes.title}>
+          <Typography variant="h6" noWrap>
+            Anime Database
           </Typography>
-          <div className={classes.search}>
+          </Link>
+          <form className={classes.search} onSubmit={handleSearch}>
             <div className={classes.searchIcon}>
               <SearchIcon />
             </div>
@@ -92,8 +99,10 @@ export default function SearchAppBar() {
                 input: classes.inputInput,
               }}
               inputProps={{ 'aria-label': 'search' }}
+              value={input}
+              onChange={(event) => setInput(event.target.value)}
             />
-          </div>
+          </form>
         </Toolbar>
       </AppBar>
     </div>

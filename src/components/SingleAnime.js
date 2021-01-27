@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react';
-import {Grid, Typography, Link, Paper} from '@material-ui/core';
+import {Grid, Typography, Paper} from '@material-ui/core';
 import './SingleAnime.scss';
 
 const SingleAnime = (props) => {
@@ -34,9 +34,9 @@ const SingleAnime = (props) => {
                 <Typography variant="h5" component="h2">
                     Episodes: {episodes}
                 </Typography>
-                <Link component="button" variant="body1" href={url}>
-                    My Anime List
-                </Link>
+                <Typography>
+                    <a href={url}>My Anime List</a>
+                </Typography>
             </Paper>
             </Grid>
         </Grid>
